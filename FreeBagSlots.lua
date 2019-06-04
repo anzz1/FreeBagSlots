@@ -12,7 +12,8 @@ local function isRegularBag(bag)
 	local _, _, id = strfind(GetInventoryItemLink("player", ContainerIDToInventoryID(bag)) or "", "item:(%d+)")
 	if id then
 		local _, _, _, _, _, subType = GetItemInfo(id)
-		return (subType == "Bag" or subType == "Beh\195\164lter" or subType == "Sac" or subType == "容器" or subType == "背包" or subType == "가방" or subType == "Bolsa" or subType == "Сумка" or false)
+		-- enUS / deDE / frFR / zhTW / zhCN / koKR / esES / ruRU
+		return (subType == "Bag" or subType == "Beh\195\164lter" or subType == "Sac" or subType == "\229\174\185\229\153\168" or subType == "\232\131\140\229\140\133" or subType == "\234\176\128\235\176\169" or subType == "Bolsa" or subType == "\208\161\209\131\208\188\208\186\208\176" or false)
 	end
 	return false
 end
