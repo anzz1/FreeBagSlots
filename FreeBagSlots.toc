@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: FreeBagSlots
+## Notes: Free bag slots counter for 1.12.1
+## Author: kebabstorm
+## Version: 1.12.1
+
+FreeBagSlots.lua
